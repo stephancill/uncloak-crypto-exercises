@@ -1,4 +1,6 @@
-
+// TODO: Improvements
+// Refactor key generation
+// Run both benchmarks simultaneously
 
 pub fn rsa_encrypt(data: &[u8]) {
     let _enc = rsa_lib_2::rsa_encrypt(data);

@@ -7,8 +7,9 @@ fn main() {
 }
 
 pub fn encrypt(plaintext: &str, key: &str) -> String {
-    let mut ciphertext = String::new();
+    let mut ciphertext = String::new(); // Owned string
     let mut key_iter = key.chars().cycle();
+    // plaintext.chars().into_iter().map(f)
     for c in plaintext.chars() {
         let key_char = key_iter.next().unwrap();
 
